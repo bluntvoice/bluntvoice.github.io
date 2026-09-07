@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">只留一份应用图标</title>
+  <desc id="desc">深蓝色圆角底板上，一份白色文件覆盖浅蓝副本，黄色标记强调最终保留项。</desc>
+  <rect width="512" height="512" rx="112" fill="#0B3A82"/>
+  <rect x="116" y="104" width="232" height="286" rx="30" fill="#8EA9CD" opacity="0.58"/>
+  <rect x="151" y="124" width="246" height="296" rx="32" fill="#FFFFFF"/>
+  <path d="M331 124v76c0 15.5 12.5 28 28 28h38" fill="#E8F0FB"/>
+  <path d="M331 124l66 104h-38c-15.5 0-28-12.5-28-28v-76z" fill="#D4E1F2"/>
+  <rect x="199" y="270" width="150" height="20" rx="10" fill="#0B3A82"/>
+  <rect x="199" y="314" width="112" height="18" rx="9" fill="#B7C7DB"/>
+  <circle cx="371" cy="379" r="53" fill="#FFB000"/>
+  <path d="M346 379l17 17 34-39" fill="none" stroke="#102A56" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
