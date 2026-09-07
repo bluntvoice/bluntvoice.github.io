@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="六朝声的个人作品主页：记录独立设计、开发与持续迭代的开源工具。" />
+  <meta name="theme-color" content="#f6f7f4" />
+  <title>六朝声 · Projects</title>
+  <link rel="preconnect" href="https://avatars.githubusercontent.com" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark">声</span>
+      <span>六朝声</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#projects">作品</a>
+      <a href="#about">关于</a>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">◐</button>
+      <a class="compact-button" href="https://github.com/bluntvoice" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">PERSONAL PROJECTS · 2026</p>
+        <h1>把实际遇到的问题，<br />做成真正能用的小工具。</h1>
+        <p class="hero-intro">这里记录我独立设计、开发和持续迭代的开源项目。比起堆叠功能，我更关注具体问题、清晰规则、本地优先和可长期维护。</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#projects">查看作品</a>
+          <a class="text-link" href="https://github.com/bluntvoice?tab=repositories" target="_blank" rel="noreferrer">全部仓库 ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="个人资料">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/122024082?v=4" alt="bluntvoice GitHub 头像" />
+        <div class="hero-identity">
+          <strong>bluntvoice</strong>
+          <p>Independent maker</p>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>展示项目</dt><dd>5</dd></div>
+          <div><dt>主要平台</dt><dd>Windows</dd></div>
+          <div><dt>代码托管</dt><dd>GitHub</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>作品</h2>
+        </div>
+        <div class="filters" role="group" aria-label="项目筛选">
+          <button class="filter is-active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="productivity">效率工具</button>
+          <button class="filter" type="button" data-filter="information">信息整理</button>
+          <button class="filter" type="button" data-filter="developer">开发辅助</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" data-category="productivity">
+          <div class="project-topline">
+            <span class="project-icon">IL</span>
+            <div class="project-meta"><span>Windows</span><span>持续迭代</span></div>
+          </div>
+          <h3>In Line｜排着呢</h3>
+          <p class="project-summary">面向个人与内部支持岗位的本地取号、事项队列和工作复盘工具，把“谁先来、现在到哪、做了多少”整理成可追踪的工作流。</p>
+          <ul class="project-points">
+            <li>事项登记、排队、暂缓与办理记录</li>
+            <li>工作日历、统计分析与报告</li>
+            <li>本地数据、备份恢复与只读 AI MCP</li>
+          </ul>
+          <div class="project-footer">
+            <span class="version">Stable v0.2.2</span>
+            <a href="https://github.com/bluntvoice/In-Line" target="_blank" rel="noreferrer">查看项目 ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="information">
+          <div class="project-topline">
+            <span class="project-icon">拾</span>
+            <div class="project-meta"><span>Windows</span><span>AI</span></div>
+          </div>
+          <h3>群聊拾遗</h3>
+          <p class="project-summary">基于本地微信聊天数据的群聊统计、AI 总结与历史回顾工具，把高密度聊天整理成可长期保存、检索和分享的报告。</p>
+          <ul class="project-points">
+            <li>单日 / 多日 AI 总结与讨论脉络</li>
+            <li>PNG、HTML、JSON 多格式报告</li>
+            <li>历史搜索、活跃热力图与匿名版报告</li>
+          </ul>
+          <div class="project-footer">
+            <span class="version">v1.1.0</span>
+            <a href="https://github.com/bluntvoice/wechat-chat-summary" target="_blank" rel="noreferrer">查看项目 ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="productivity information">
+          <div class="project-topline">
+            <span class="project-icon">1</span>
+            <div class="project-meta"><span>Windows</span><span>Local-first</span></div>
+          </div>
+          <h3>只留一份 · Keep One</h3>
+          <p class="project-summary">针对电脑版微信附件反复下载等场景设计的本地重复文件整理工具，通过内容校验确认重复，再由用户决定是否清理。</p>
+          <ul class="project-points">
+            <li>微信附件目录与任意本地目录扫描</li>
+            <li>分级哈希 + SHA-256 内容确认</li>
+            <li>清理清单、二次确认与 Windows 回收站</li>
+          </ul>
+          <div class="project-footer">
+            <span class="version">v0.1.0</span>
+            <a href="https://github.com/bluntvoice/keep-one" target="_blank" rel="noreferrer">查看项目 ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="productivity">
+          <div class="project-topline">
+            <span class="project-icon">FR</span>
+            <div class="project-meta"><span>Windows</span><span>Portable</span></div>
+          </div>
+          <h3>FileRenameTool</h3>
+          <p class="project-summary">为合同、制度、方案、报告等多轮修订文件设计的轻量命名工具，自动处理日期、版本号、版本类型和公司简称。</p>
+          <ul class="project-points">
+            <li>自动识别并递增已有版本号</li>
+            <li>修订版 / 清洁版 / 自定义类型</li>
+            <li>拖拽批量处理与新建规范 DOCX</li>
+          </ul>
+          <div class="project-footer">
+            <span class="version">v2.6</span>
+            <a href="https://github.com/bluntvoice/FileRenameTool" target="_blank" rel="noreferrer">查看项目 ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="developer productivity">
+          <div class="project-topline">
+            <span class="project-icon">SF</span>
+            <div class="project-meta"><span>Windows</span><span>Codex</span></div>
+          </div>
+          <h3>Skill Float</h3>
+          <p class="project-summary">通过全局快捷键快速搜索和调用本机 Codex Skills 的轻量原生工具，把分散的 Skill 变成可搜索、分类和收藏的本地面板。</p>
+          <ul class="project-points">
+            <li>快捷唤出、搜索、分类、收藏与插入</li>
+            <li>中文信息与 AI 汉化草稿独立保存</li>
+            <li>本地调用统计与安全的 Skill 管理</li>
+          </ul>
+          <div class="project-footer">
+            <span class="version">In development</span>
+            <a href="https://github.com/bluntvoice/skill-float" target="_blank" rel="noreferrer">查看项目 ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell about" id="about">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>关于这个页面</h2>
+      </div>
+      <div class="about-copy">
+        <p>这些项目大多从日常工作或个人使用中的具体摩擦出发：排队混乱、文件版本难管理、重复附件占空间、群聊信息难回顾，或工具调用路径太长。</p>
+        <p>我倾向先把规则想清楚，再把它做成足够轻、足够稳定、愿意长期自己使用的工具。项目仍在持续变化，这个页面也会随新的作品一起更新。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>© <span id="year">2026</span> 六朝声</span>
+    <span>Built with HTML · CSS · JavaScript · Hosted on GitHub Pages</span>
+  </footer>
+</body>
+</html>
